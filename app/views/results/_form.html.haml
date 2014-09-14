@@ -1,0 +1,22 @@
+= form_for @result do |f|
+  - if @result.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@result.errors.count, "error")} prohibited this result from being saved:"
+      %ul
+        - @result.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :result_date
+    = f.date_select :result_date
+  .field
+    = f.label :score
+    = f.text_field :score
+  .field
+    = f.label :user
+    = f.text_field :user
+  .field
+    = f.label :competition
+    = f.text_field :competition
+  .actions
+    = f.submit 'Save'
