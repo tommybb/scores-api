@@ -11,7 +11,7 @@
   .field
     = f.input :last_name
   .field
-    = f.input :birth_date, as: :date
+    = f.input :birth_date, as: :date, start_year: Date.today.year - 60, end_year: Date.today.year - 6
   .field
     = f.input :school_class
   .field

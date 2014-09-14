@@ -1,24 +1,25 @@
 %h1 Listing results
 
-%table
-  %tr
-    %th Result date
-    %th Score
-    %th User
-    %th Competition
-    %th
-    %th
-    %th
-
-  - @results.each do |result|
+%table.table.table-striped
+  %thead
     %tr
-      %td= result.result_date
-      %td= result.score
-      %td= result.user
-      %td= result.competition
-      %td= link_to 'Show', result
-      %td= link_to 'Edit', edit_result_path(result)
-      %td= link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %th Result date
+      %th Score
+      %th User
+      %th Competition
+      %th
+      %th
+      %th
+  %tbodyccc
+    - @results.each do |result|
+      %tr
+        %td= result.result_date
+        %td= result.score
+        %td= result.user.to_label
+        %td= result.competition.name
+        %td= link_to 'Show', result
+        %td= link_to 'Edit', edit_result_path(result)
+        %td= link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 

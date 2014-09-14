@@ -11,8 +11,8 @@
   .field
     = f.input :score
   .field
-    = f.input :user
+    = f.association :user, include_blank: false, label_method: :to_label
   .field
-    = f.input :competition
+    = f.association :competition, include_blank: false
   .actions
     = f.button :submit

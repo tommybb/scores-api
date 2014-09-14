@@ -8,10 +8,10 @@
   = @result.score
 %p
   %b User:
-  = @result.user
+  = @result.user.to_label
 %p
   %b Competition:
-  = @result.competition
+  = @result.competition.name
 
 = link_to 'Edit', edit_result_path(@result)
 \|
