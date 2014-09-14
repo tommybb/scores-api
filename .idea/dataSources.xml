@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3586873095">
+    <data-source source="LOCAL" name="Rails competitor: development" uuid="913992e7-4ccb-486a-8be1-48da337fc355">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:competitor_development</jdbc-url>
+      <user-name>tomek</user-name>
+      <user-password>dfdedfc5dfc7dfcfdfc1</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails competitor: test" uuid="e7d08036-847c-4af6-94fb-2afd89ac9571">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:competitor_test</jdbc-url>
+      <user-name>tomek</user-name>
+      <user-password>dfdedfc5dfc7dfcfdfc1</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
