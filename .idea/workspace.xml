@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="981b7250-32ec-45b7-8613-04168f723ac8" name="Default" comment="create project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/competitor.iml" afterPath="$PROJECT_DIR$/.idea/competitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+    <list default="true" id="981b7250-32ec-45b7-8613-04168f723ac8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="competitor.iws" />
@@ -300,7 +294,11 @@
       <created>1410711252127</created>
       <updated>1410711252127</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial gems and database configuration">
+      <created>1410711784183</created>
+      <updated>1410711784183</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +342,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="create project" />
+    <MESSAGE value="initial gems and database configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial gems and database configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
