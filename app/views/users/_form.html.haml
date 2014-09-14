@@ -1,4 +1,4 @@
-= form_for @user do |f|
+= simple_form_for @user do |f|
   - if @user.errors.any?
     #error_explanation
       %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
@@ -7,22 +7,16 @@
           %li= msg
 
   .field
-    = f.label :name
-    = f.text_field :name
+    = f.input :name
   .field
-    = f.label :last_name
-    = f.text_field :last_name
+    = f.input :last_name
   .field
-    = f.label :birth_date
-    = f.date_select :birth_date
+    = f.input :birth_date, as: :date
   .field
-    = f.label :school_class
-    = f.text_field :school_class
+    = f.input :school_class
   .field
-    = f.label :email
-    = f.text_field :email
+    = f.input :email
   .field
-    = f.label :admin
-    = f.check_box :admin
+    = f.input :admin, as: :boolean, checked_value: true, unchecked_value: false
   .actions
-    = f.submit 'Save'
+    = f.button :submit
