@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+marian_1:
   result_date: 2014-09-14
   score: 9.99
-  user_id: 
-  competition_id: 
+  user_id: 1
+  competition_id: 1
 
-two:
-  result_date: 2014-09-14
-  score: 9.99
-  user_id: 
-  competition_id: 
+marian_2:
+  result_date: 2014-09-15
+  score: 9.76
+  user_id: 1
+  competition_id: 1
