@@ -1,17 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  last_name: MyString
-  birth_date: 2014-09-14
-  school_class: MyString
-  email: MyString
+marian:
+  id: 1
+  name: Marian
+  last_name: Kiepski
+  birth_date: 2014-09-15
+  school_class: 4B
+  email: mariank@gmail.com
   admin: false
 
-two:
-  name: MyString
-  last_name: MyString
+kazimierz:
+  id: 2
+  name: Kazimierz
+  last_name: Deyna
   birth_date: 2014-09-14
-  school_class: MyString
-  email: MyString
+  school_class: 4D
+  email: kazekd@gmail.com
   admin: false
