@@ -17,6 +17,8 @@ gem 'test-unit'
 gem 'shoulda'
 gem 'factory_girl_rails'
 gem 'capybara'
+gem 'rspec-rails'
+gem 'rspec-its'
 
 group :development do
   gem 'spring'
