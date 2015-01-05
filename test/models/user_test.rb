@@ -3,8 +3,13 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   test "valid with all attributes" do
     user = User.new
-    user = users(:marian)
+    user = FactoryGirl.create(:user)
     assert user.valid?, 'User was not valid'
+  end
+  test "is name Marian?" do
+    user = User.new
+    user = FactoryGirl.create(:user)
+    assert_equal 'Marian', user.name
   end
   test "should respond to results" do
     user = User.new
