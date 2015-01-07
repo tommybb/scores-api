@@ -7,4 +7,9 @@ class User < ActiveRecord::Base
   def to_label
     "#{last_name} #{name}"
   end
+
+  def bump_result
+    result.bump(5)
+    self.name = 'X'
+  end
 end
