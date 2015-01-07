@@ -14,7 +14,7 @@ describe User do
   # it "number of user change after save" do
   #   user = FactoryGirl.create(:user)
   #   expect {user.save!}.to change { User.count }.by(1)
-  # end               ???????????????????????
+  # end
 end
 
 

@@ -19,6 +19,7 @@ gem 'factory_girl_rails'
 gem 'capybara'
 gem 'rspec-rails'
 gem 'rspec-its'
+gem 'database_cleaner'
 
 group :development do
   gem 'spring'
