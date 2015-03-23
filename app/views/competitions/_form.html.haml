@@ -1,9 +1,9 @@
-= simple_form_for @competition do |f|
-  - if @competition.errors.any?
+= simple_form_for competition do |f|
+  - if competition.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@competition.errors.count, "error")} prohibited this competition from being saved:"
+      %h2= "#{pluralize(competition.errors.count, "error")} prohibited this competition from being saved:"
       %ul
-        - @competition.errors.full_messages.each do |msg|
+        - competition.errors.full_messages.each do |msg|
           %li= msg
 
   .field

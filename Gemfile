@@ -20,6 +20,7 @@ gem 'capybara'
 gem 'rspec-rails'
 gem 'rspec-its'
 gem 'database_cleaner'
+gem 'decent_exposure'
 
 group :development do
   gem 'spring'

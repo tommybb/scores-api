@@ -2,23 +2,23 @@
 
 %p
   %b Name:
-  = @user.name
+  = user.name
 %p
   %b Last name:
-  = @user.last_name
+  = user.last_name
 %p
   %b Birth date:
-  = @user.birth_date
+  = user.birth_date
 %p
   %b School class:
-  = @user.school_class
+  = user.school_class
 %p
   %b Email:
-  = @user.email
+  = user.email
 %p
   %b Admin:
-  = @user.admin
+  = user.admin
 
-= link_to 'Edit', edit_user_path(@user)
+= link_to 'Edit', edit_user_path(user)
 \|
 = link_to 'Back', users_path

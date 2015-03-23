@@ -1,9 +1,9 @@
-= simple_form_for @result do |f|
-  - if @result.errors.any?
+= simple_form_for result do |f|
+  - if result.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@result.errors.count, "error")} prohibited this result from being saved:"
+      %h2= "#{pluralize(result.errors.count, "error")} prohibited this result from being saved:"
       %ul
-        - @result.errors.full_messages.each do |msg|
+        - result.errors.full_messages.each do |msg|
           %li= msg
 
   .field

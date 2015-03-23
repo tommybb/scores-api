@@ -2,20 +2,20 @@
 
 %p
   %b Result date:
-  = @result.result_date
+  = result.result_date
 %p
   %b Score:
-  = @result.score
+  = result.score
 %p
   %b User:
-  = @result.user.to_label
+  = result.user.to_label
 %p
   %b Class:
-  = @result.user.school_class
+  = result.user.school_class
 %p
   %b Competition:
-  = @result.competition.name
+  = result.competition.name
 
-= link_to 'Edit', edit_result_path(@result)
+= link_to 'Edit', edit_result_path(result)
 \|
 = link_to 'Back', results_path
