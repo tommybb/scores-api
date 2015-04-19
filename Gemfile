@@ -21,6 +21,7 @@ gem 'rspec-rails'
 gem 'rspec-its'
 gem 'database_cleaner'
 gem 'decent_exposure'
+gem 'pry'
 
 group :development do
   gem 'spring'
