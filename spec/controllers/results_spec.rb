@@ -37,7 +37,7 @@ describe ResultsController do
   end
 
   describe '#edit' do
-    context 'one event exists' do
+    context 'one result exists' do
       let!(:result) { FactoryGirl.create(:result) }
 
       context 'after request' do
