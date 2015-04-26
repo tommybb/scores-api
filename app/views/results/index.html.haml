@@ -14,15 +14,15 @@
   %tbodyccc
     - results.each do |result|
       %tr
-        %td= result.result_date
-        %td= result.score
-        %td= result.user.to_label
-        %td= result.user.school_class
-        %td= result.competition.name
-        %td= link_to 'Show', result
-        %td= link_to 'Edit', edit_result_path(result)
-        %td= link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td.col-md-2= result.result_date
+        %td.col-md-2= result.score
+        %td.col-md-2= result.user.to_label
+        %td.col-md-1= result.user.school_class
+        %td.col-md-2= result.competition.name
+        %td.col-md-1= link_to 'Show', result, class: 'btn btn-xs btn-default'
+        %td.col-md-1= link_to 'Edit', edit_result_path(result), class: 'btn btn-xs btn-default'
+        %td.col-md-1= link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New Result', new_result_path
+= link_to 'New Result', new_result_path, class: 'btn btn-xs btn-default'

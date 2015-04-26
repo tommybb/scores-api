@@ -1,6 +1,6 @@
 %h1 Listing competitions
 
-%table
+%table.table.table-striped
   %tr
     %th Name
     %th
@@ -9,11 +9,11 @@
 
   - competitions.each do |competition|
     %tr
-      %td= competition.name
-      %td= link_to 'Show', competition
-      %td= link_to 'Edit', edit_competition_path(competition)
-      %td= link_to 'Destroy', competition, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td.col-md-5= competition.name
+      %td.col-md-1= link_to 'Show', competition, class: 'btn btn-xs btn-default'
+      %td.col-md-1= link_to 'Edit', edit_competition_path(competition), class: 'btn btn-xs btn-default'
+      %td.col-md-1= link_to 'Destroy', competition, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New Competition', new_competition_path
+= link_to 'New Competition', new_competition_path, class: 'btn btn-xs btn-default'
