@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'pg'
 gem 'haml-rails', '>= 0.5.3'
-gem 'simple_form', '~> 3.0.2'
+gem 'simple_form', '~> 3.1.0'
 gem 'test-unit'
 gem 'shoulda'
 gem 'factory_girl_rails'
