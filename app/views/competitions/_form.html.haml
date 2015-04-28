@@ -8,5 +8,7 @@
 
   .field
     = f.input :name
+    %br
   .actions
-    = f.button :submit
+    = f.button :submit, class: 'btn btn-sm btn-primary'
+    = link_to "Cancel", :back, class: 'btn btn-sm btn-danger'
