@@ -19,4 +19,5 @@
   .field
     = f.input :admin, as: :boolean, checked_value: true, unchecked_value: false
   .actions
-    = f.button :submit
+    = f.button :submit, class: 'btn btn-sm btn-primary'
+    = link_to "Cancel", users_path, class: 'btn btn-sm btn-danger'

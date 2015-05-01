@@ -1,30 +1,28 @@
-%h1 Listing users
-
-%table.table.table-striped
-  %tr
-    %th Name
-    %th Last name
-    %th Birth date
-    %th School class
-    %th Email
-    %th Admin
-    %th
-    %th
-    %th
-
-  - users.each do |user|
+.panel.panel-primary
+  .panel-heading Listing users
+  %table.table.table-striped
     %tr
-      %td.col-md-2= user.name
-      %td.col-md-2= user.last_name
-      %td.col-md-2= user.birth_date
-      %td.col-md-1= user.school_class
-      %td.col-md-2= user.email
-      %td.col-md-1= user.admin
-      %td.col-md-2
-        = link_to 'Show', user, class: 'btn btn-xs btn-default'
-        = link_to 'Edit', edit_user_path(user), class: 'btn btn-xs btn-default'
-        = link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
+      %th Name
+      %th Last name
+      %th Birth date
+      %th School class
+      %th Email
+      %th Admin
+      %th
+
+    - users.each do |user|
+      %tr
+        %td.col-md-2= user.name
+        %td.col-md-2= user.last_name
+        %td.col-md-2= user.birth_date
+        %td.col-md-1= user.school_class
+        %td.col-md-2= user.email
+        %td.col-md-1= user.admin
+        %td.col-md-2
+          = link_to 'Show', user, class: 'btn btn-xs btn-default'
+          = link_to 'Edit', edit_user_path(user), class: 'btn btn-xs btn-default'
+          = link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New User', new_user_path, class: 'btn btn-xs btn-default'
+= link_to 'New User', new_user_path, class: 'btn btn-sm btn-primary'

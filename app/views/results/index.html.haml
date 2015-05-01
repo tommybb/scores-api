@@ -1,29 +1,29 @@
-%h1 Listing results
+.panel.panel-primary
+  .panel-heading Listing results
 
-%table.table.table-striped
-  %thead
-    %tr
-      %th Result date
-      %th Score
-      %th User
-      %th Class
-      %th Competition
-      %th
-      %th
-      %th
-  %tbodyccc
-    - results.each do |result|
+  %table.table.table-striped
+    %thead
       %tr
-        %td.col-md-2= result.result_date
-        %td.col-md-2= result.score
-        %td.col-md-2= result.user.to_label
-        %td.col-md-1= result.user.school_class
-        %td.col-md-3= result.competition.name
-        %td.col-md-2
-          = link_to 'Show', result, class: 'btn btn-xs btn-default'
-          = link_to 'Edit', edit_result_path(result), class: 'btn btn-xs btn-default'
-          = link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
+        %th Result date
+        %th Score
+        %th User
+        %th Class
+        %th Competition
+        %th
+
+    %tbodyccc
+      - results.each do |result|
+        %tr
+          %td.col-md-2= result.result_date
+          %td.col-md-2= result.score
+          %td.col-md-2= result.user.to_label
+          %td.col-md-1= result.user.school_class
+          %td.col-md-3= result.competition.name
+          %td.col-md-2
+            = link_to 'Show', result, class: 'btn btn-xs btn-default'
+            = link_to 'Edit', edit_result_path(result), class: 'btn btn-xs btn-default'
+            = link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New Result', new_result_path, class: 'btn btn-xs btn-default'
+= link_to 'New Result', new_result_path, class: 'btn btn-sm btn-primary'

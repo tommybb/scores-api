@@ -19,6 +19,5 @@
   %b Admin:
   = user.admin
 
-= link_to 'Edit', edit_user_path(user)
-\|
-= link_to 'Back', users_path
+= link_to 'Edit', edit_user_path(user), class: 'btn btn-sm btn-primary'
+= link_to 'Back', users_path, class: 'btn btn-sm btn-primary'
