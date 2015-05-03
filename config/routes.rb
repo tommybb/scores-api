@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: { registrations: 'registrations' }
   resources :competitions
   resources :results
   resources :users

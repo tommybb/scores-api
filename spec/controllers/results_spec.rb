@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe ResultsController do
-
   let!(:user) { FactoryGirl.create(:user) }
+  before { sign_in user }
 
   describe '#index' do
     context 'one result exists' do

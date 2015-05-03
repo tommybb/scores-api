@@ -51,6 +51,7 @@ describe CompetitionsController do
 
     context 'with valid params' do
       let(:attributes) { FactoryGirl.attributes_for(:competition) }
+      before { sign_in user }
 
       it { expect { call_request }.to change { Competition.count }.by(1) }
 
