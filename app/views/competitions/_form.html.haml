@@ -7,8 +7,8 @@
           %li= msg
 
   .field
-    = f.input :name
+    = f.input :name, label: t('competition.name')
     %br
   .actions
-    = f.button :submit, class: 'btn btn-sm btn-primary'
-    = link_to "Cancel", competitions_path, class: 'btn btn-sm btn-danger'
+    = f.button :submit, t('record.create'), class: 'btn btn-sm btn-primary'
+    = link_to t('record.back'), competitions_path, class: 'btn btn-sm btn-danger'

@@ -1,0 +1,42 @@
+pl:
+  navbar:
+    results: Wyniki
+    users: Użytkownicy
+    competitions: Dyscypliny
+    logout: Wyloguj
+    signup: Zarejestruj
+    login: Zaloguj
+    logged_in_as: 'Zalogowany jako: '
+
+  user:
+    listing_users: Lista użytkowników
+    name: Imię
+    last_name: Nazwisko
+    birth_date: Data urodzenia
+    school_class: Klasa
+    email: E-mail
+    admin: Admin
+    new_user: Nowy użytkownik
+
+  result:
+    listing_results: Lista wyników
+    result_date: Data wyniku
+    score: Wynik
+    user: Użytkownik
+    school_class: Klasa
+    competition: Dyscyplina
+    new_result: Nowy wynik
+
+  competition:
+    listing_competitions: Lista dyscyplin
+    name: Nazwa
+    new_competition: Nowa dyscyplina
+
+  record:
+    show: Pokaż
+    edit: Edytuj
+    destroy: Usuń
+    confirmation: Jesteś pewien?
+    back: Wróć
+    save: Zapisz
+    create: Utwórz

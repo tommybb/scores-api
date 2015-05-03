@@ -1,23 +1,23 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b #{t('user.name')}:
   = user.name
 %p
-  %b Last name:
+  %b #{t('user.last_name')}:
   = user.last_name
 %p
-  %b Birth date:
+  %b #{t('user.birth_date')}:
   = user.birth_date
 %p
-  %b School class:
+  %b #{t('user.school_class')}:
   = user.school_class
 %p
-  %b Email:
+  %b #{t('user.email')}:
   = user.email
 %p
-  %b Admin:
+  %b #{t('user.admin')}:
   = user.admin
 
-= link_to 'Edit', edit_user_path(user), class: 'btn btn-sm btn-primary'
-= link_to 'Back', users_path, class: 'btn btn-sm btn-primary'
+= link_to t('record.edit'), edit_user_path(user), class: 'btn btn-sm btn-primary'
+= link_to t('record.back'), users_path, class: 'btn btn-sm btn-primary'

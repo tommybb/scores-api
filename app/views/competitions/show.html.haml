@@ -1,8 +1,8 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b #{t('competition.name')}:
   = competition.name
 
-= link_to 'Edit', edit_competition_path(competition), class: 'btn btn-sm btn-primary'
-= link_to 'Back', competitions_path, class: 'btn btn-sm btn-primary'
+= link_to t('record.edit'), edit_competition_path(competition), class: 'btn btn-sm btn-primary'
+= link_to t('record.back'), competitions_path, class: 'btn btn-sm btn-primary'

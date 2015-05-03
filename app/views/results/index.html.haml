@@ -1,14 +1,14 @@
 .panel.panel-primary
-  .panel-heading Listing results
+  .panel-heading= t('result.listing_results')
 
   %table.table.table-striped
     %thead
       %tr
-        %th Result date
-        %th Score
-        %th User
-        %th Class
-        %th Competition
+        %th= t('result.result_date')
+        %th= t('result.score')
+        %th= t('result.user')
+        %th= t('result.school_class')
+        %th= t('result.competition')
         %th
 
     %tbodyccc
@@ -20,10 +20,10 @@
           %td.col-md-1= result.user.school_class
           %td.col-md-3= result.competition.name
           %td.col-md-2
-            = link_to 'Show', result, class: 'btn btn-xs btn-default'
-            = link_to 'Edit', edit_result_path(result), class: 'btn btn-xs btn-default'
-            = link_to 'Destroy', result, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
+            = link_to t('record.show'), result, class: 'btn btn-xs btn-default'
+            = link_to t('record.edit'), edit_result_path(result), class: 'btn btn-xs btn-default'
+            = link_to t('record.destroy'), result, :method => :delete, :data => { confirm: t('record.confirmation') }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New Result', new_result_path, class: 'btn btn-sm btn-primary'
+= link_to t('result.new_result'), new_result_path, class: 'btn btn-sm btn-primary'

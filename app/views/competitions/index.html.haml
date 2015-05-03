@@ -1,18 +1,18 @@
 .panel.panel-primary
-  .panel-heading Listing competitions
+  .panel-heading= t('competition.listing_competitions')
   %table.table.table-striped
     %tr
-      %th Name
+      %th= t('competition.name')
       %th
 
     - competitions.each do |competition|
       %tr
         %td.col-md-10= competition.name
         %td.col-md-2
-          = link_to 'Show', competition, class: 'btn btn-xs btn-default'
-          = link_to 'Edit', edit_competition_path(competition), class: 'btn btn-xs btn-default'
-          = link_to 'Destroy', competition, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
+          = link_to t('record.show'), competition, class: 'btn btn-xs btn-default'
+          = link_to t('record.edit'), edit_competition_path(competition), class: 'btn btn-xs btn-default'
+          = link_to t('record.destroy'), competition, :method => :delete, :data => { confirm: t('record.confirmation') }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New Competition', new_competition_path, class: 'btn btn-sm btn-primary'
+= link_to t('competition.new_competition'), new_competition_path, class: 'btn btn-sm btn-primary'

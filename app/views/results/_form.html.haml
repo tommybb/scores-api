@@ -7,13 +7,13 @@
           %li= msg
 
   .field
-    = f.input :result_date, as: :date
+    = f.input :result_date, as: :date, label: t('result.result_date')
   .field
-    = f.input :score
+    = f.input :score, label: t('result.score')
   .field
-    = f.association :user, include_blank: false, label_method: :to_label
+    = f.association :user, include_blank: false, label_method: :to_label, label: t('result.user')
   .field
-    = f.association :competition, include_blank: false
+    = f.association :competition, include_blank: false, label: t('result.competition')
   .actions
-    = f.button :submit, class: 'btn btn-sm btn-primary'
-    = link_to "Cancel", results_path, class: 'btn btn-sm btn-danger'
+    = f.button :submit, t('record.create'), class: 'btn btn-sm btn-primary'
+    = link_to t('record.back'), results_path, class: 'btn btn-sm btn-danger'

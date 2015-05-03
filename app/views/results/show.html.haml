@@ -1,20 +1,20 @@
 %p#notice= notice
 
 %p
-  %b Result date:
+  %b #{t('result.result_date')}:
   = result.result_date
 %p
-  %b Score:
+  %b #{t('result.score')}:
   = result.score
 %p
-  %b User:
+  %b #{t('result.user')}:
   = result.user.to_label
 %p
-  %b Class:
+  %b #{t('result.school_class')}:
   = result.user.school_class
 %p
-  %b Competition:
+  %b #{t('competition.name')}:
   = result.competition.name
 
-= link_to 'Edit', edit_result_path(result), class: 'btn btn-sm btn-primary'
-= link_to 'Back', results_path, class: 'btn btn-sm btn-primary'
+= link_to t('record.edit'), edit_result_path(result), class: 'btn btn-sm btn-primary'
+= link_to t('record.back'), results_path, class: 'btn btn-sm btn-primary'

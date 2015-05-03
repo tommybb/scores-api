@@ -1,13 +1,13 @@
 .panel.panel-primary
-  .panel-heading Listing users
+  .panel-heading= t('user.listing_users')
   %table.table.table-striped
     %tr
-      %th Name
-      %th Last name
-      %th Birth date
-      %th School class
-      %th Email
-      %th Admin
+      %th= t('user.name')
+      %th= t('user.last_name')
+      %th= t('user.birth_date')
+      %th= t('user.school_class')
+      %th= t('user.email')
+      %th= t('user.admin')
       %th
 
     - users.each do |user|
@@ -19,10 +19,10 @@
         %td.col-md-2= user.email
         %td.col-md-1= user.admin
         %td.col-md-2
-          = link_to 'Show', user, class: 'btn btn-xs btn-default'
-          = link_to 'Edit', edit_user_path(user), class: 'btn btn-xs btn-default'
-          = link_to 'Destroy', user, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-xs btn-danger'
+          = link_to t('record.show'), user, class: 'btn btn-xs btn-default'
+          = link_to t('record.edit'), edit_user_path(user), class: 'btn btn-xs btn-default'
+          = link_to t('record.destroy'), user, :method => :delete, :data => { confirm: t('record.confirmation') }, class: 'btn btn-xs btn-danger'
 
 %br
 
-= link_to 'New User', new_user_path, class: 'btn btn-sm btn-primary'
+= link_to t('user.new_user'), new_user_path, class: 'btn btn-sm btn-primary'
