@@ -1,4 +1,5 @@
 pl:
+  competitor: Zawodnik
   navbar:
     results: Wyniki
     users: Użytkownicy
@@ -17,6 +18,7 @@ pl:
     email: E-mail
     admin: Admin
     new_user: Nowy użytkownik
+    editing_user: Edycja
 
   result:
     listing_results: Lista wyników
@@ -26,11 +28,13 @@ pl:
     school_class: Klasa
     competition: Dyscyplina
     new_result: Nowy wynik
+    editing_result: Edycja wyniku
 
   competition:
     listing_competitions: Lista dyscyplin
     name: Nazwa
     new_competition: Nowa dyscyplina
+    editing_competition: Edycja dyscypliny
 
   record:
     show: Pokaż

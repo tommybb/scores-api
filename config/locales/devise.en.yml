@@ -58,3 +58,14 @@ en:
       not_saved:
         one: "1 error prohibited this %{resource} from being saved:"
         other: "%{count} errors prohibited this %{resource} from being saved:"
+  additional:
+    leave_blank: leave it blank if you don't want to change it
+    password: Password
+    password_confirmation: Password confirmation
+    current_password_hint: we need your current password to confirm your changes
+    current_password: Current password
+    cancel: Cancel my account
+    confirm: Are you sure?
+    update: Update
+    sign_up: Sign up
+    characters_minimum: characters minimum
