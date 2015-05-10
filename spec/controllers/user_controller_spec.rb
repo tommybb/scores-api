@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe UsersController do
 
-
+  include_context 'user signed in'
   describe '#index' do
     context 'one user exists' do
       let!(:user) { FactoryGirl.create(:user) }
@@ -10,7 +10,7 @@ describe UsersController do
       context 'after request' do
         before { get :index }
 
-        it { expect(controller.users).to eq([user]) }
+        it { expect(controller.users).to eq([signed_user, user]) }
       end
     end
   end
