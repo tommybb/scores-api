@@ -25,7 +25,7 @@ class ResultsController < ApplicationController
 
   private
 
-    def result_params
-      params.require(:result).permit(:result_date, :score, :user_id, :competition_id)
-    end
+  def result_params
+    params.require(:result).permit(:result_date, :score, :user_id, :competition_id)
+  end
 end
