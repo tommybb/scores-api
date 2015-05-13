@@ -4,7 +4,7 @@ class CompetitionsController < ApplicationController
 
   def create
     if competition.save
-      redirect_to competition_path(competition), notice: 'Competition was successfully created.'
+      redirect_to competition_path(competition), notice: t('competition.competition_created')
     else
       render :new
     end
@@ -12,7 +12,7 @@ class CompetitionsController < ApplicationController
 
   def update
     if competition.update(competition_params)
-      redirect_to competition_path(competition), notice: 'Competition was successfully updated.'
+      redirect_to competition_path(competition), notice: t('competition.competition_updated')
     else
       render :edit
     end
@@ -20,7 +20,7 @@ class CompetitionsController < ApplicationController
 
   def destroy
     competition.destroy
-    redirect_to competitions_path, notice: 'Competition was successfully destroyed.'
+    redirect_to competitions_path, notice: t('competition.competition_destroyed')
   end
 
   private

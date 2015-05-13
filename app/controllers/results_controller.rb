@@ -4,7 +4,7 @@ class ResultsController < ApplicationController
 
   def create
     if result.save
-      redirect_to result_path(result), notice: 'Result was successfully created.'
+      redirect_to result_path(result), notice: t('result.result_created')
     else
       render :new
     end
@@ -12,7 +12,7 @@ class ResultsController < ApplicationController
 
   def update
     if result.update(result_params)
-      redirect_to result_path(result), notice: 'Result was successfully updated.'
+      redirect_to result_path(result), notice: t('result.result_updated')
     else
       render :edit
     end
@@ -20,7 +20,7 @@ class ResultsController < ApplicationController
 
   def destroy
     result.destroy
-    redirect_to results_path, notice: 'Result was successfully destroyed.'
+    redirect_to results_path, notice: t('result.result_destroyed')
   end
 
   private

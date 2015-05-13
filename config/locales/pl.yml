@@ -19,6 +19,9 @@ pl:
     admin: Admin
     new_user: Nowy użytkownik
     editing_user: Edycja
+    user_created: Użytkownik został dodany
+    user_updated: Użytkownik został zaktualizowany
+    user_destroyed: Użytkownik został usunięty
 
   result:
     listing_results: Lista wyników
@@ -29,12 +32,18 @@ pl:
     competition: Dyscyplina
     new_result: Nowy wynik
     editing_result: Edycja wyniku
+    result_created: Wynik został dodany
+    result_updated: Wynik został zaktualizowany
+    result_destroyed: Wynik został usunięty
 
   competition:
     listing_competitions: Lista dyscyplin
     name: Nazwa
     new_competition: Nowa dyscyplina
     editing_competition: Edycja dyscypliny
+    competition_created: Dyscyplina została utworzona
+    competition_updated: Dyscyplina została zaktualizowana
+    competition_destroyed: Dyscyplina została usunięta
 
   record:
     show: Pokaż
