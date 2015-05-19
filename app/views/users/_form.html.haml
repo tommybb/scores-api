@@ -18,6 +18,10 @@
     = f.input :email, label: t('user.email')
   .field
     = f.input :admin, as: :boolean, checked_value: true, unchecked_value: false, label: t('user.admin')
+  .field
+    = f.input :password
+  .field
+    = f.input :password_confirmation
   .actions
     = f.button :submit,t('record.create'), class: 'btn btn-sm btn-primary'
     = link_to t('record.back'), users_path, class: 'btn btn-sm btn-danger'

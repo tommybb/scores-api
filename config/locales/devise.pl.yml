@@ -14,7 +14,7 @@ pl:
   devise:
     failure:
       already_authenticated: 'Jesteś już zalogowany.'
-      unauthenticated: 'Aby kontynuować zaloguj lub zarejestruj się.'
+      unauthenticated: 'Aby kontynuować zaloguj się.'
       unconfirmed: 'Aby kontynuować aktywuj konto.'
       locked: 'Twoje konto jest zablokowane.'
       invalid: 'Niepoprawny adres email lub hasło.'

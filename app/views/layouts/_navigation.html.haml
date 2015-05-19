@@ -9,5 +9,4 @@
       %li= link_to t('navbar.logout'), destroy_user_session_path, method: :delete
     - else
       %li
-      %li= link_to t('navbar.signup'), new_registration_path(resource_name), class: 'glyphicon glyphicon-user'
       %li= link_to t('navbar.login'), new_session_path(resource_name), class: 'glyphicon glyphicon-log-in'
